@@ -1,0 +1,24 @@
+package Arithmetic_Logical_Methods_Assignments;
+import static javax.swing.JOptionPane.*;
+public class Assignments_3 {
+    public static void main(String[]args){
+        String inputLength = showInputDialog("Write the length of your rectangle in cm:");
+        String inputWidth = showInputDialog("Write the width of your rectangle in cm:");
+
+        double length, width;
+        try{
+            length = Double.parseDouble(inputLength);
+            width = Double.parseDouble(inputWidth);
+        } catch (Exception e){
+            length = 0;
+            width = 0;
+            showMessageDialog(null, "Please write a number!");
+        }
+
+        double area = length * width;
+        String twoDecimalsArea = String.format("%.2f", area);
+
+        showMessageDialog(null, "With the length of " + length +
+                "\nand the width of " + width + "\nThe area is " + twoDecimalsArea + " square centimeter.");
+    }
+}

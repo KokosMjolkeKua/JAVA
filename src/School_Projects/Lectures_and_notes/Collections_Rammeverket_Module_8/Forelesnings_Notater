@@ -1,0 +1,86 @@
+program med feil:
+- index starter alltid på 0, så om du har 10, vil det være 0,1,2...,9. ikke 10.
+- fordi den aldri starter på noe annet enn 0.
+
+INTRO til collections Rammeverk:
+- hvordan java er bygd opp
+- regler for struktur
+- forutsigrbart
+
+- array lists
+- hasjmap
+- python dictinonary
+
+- repetisjon
+
+
+INtro C og R:
+Datastrukturer:
+- hvordan håndtere og strukturere data
+- hvordan omhandler de hverandre
+
+- binærtre: holde og lagre stringer
+[index][verdi]
+[0][""]
+[1][""]
+[2][""]
+
+Lister¨: arraylist, linkedList (elementer har rekkefølge duplikater er lov)
+Set: hashset, treeset, linkedhashset (kun ulike elemenetr)
+Maps: hashmap, treeMap, linkedhashmap (nøkkel, verdi par, nøklene må være unike)
+
+lister:(.get(), .remove(), .claer(), .size(), .contains(), .add(), .set())
+set: (.get(), .remove(), .claer(), .size(), .contains(), .add(),)
+map: (.get(), .remove(), .clear(), .size(), .put())
+
+
+ARRAYLIST:
+- ikke en del av Collections Rammeverket:
+    mangler mange av metodene i interfacet
+- kan ikke endre størrelse etter dden er opprettet
+    egner seg ikke for å lagre data hvor antallet elemneter kan ednres dynamisk som f.eks. en passasjerliste
+
+
+Hvis man ikke vet hvor stor liste man trenger er det godt å ha en liste man kan tilpasse etterhvert
+hvis det er for eksempel passeger liste, så er det bare plass til ett vist antall mennesker.
+minneeffektivt og fleksibel.
+putte ting og fjerne når du vil
+- du kan ha to metoder med samme navn men forskjellig variabler og funksjoner pga Array
+
+
+
+ARRAY-LIST:
+kan ikke bruke primitive data
+- eks: int går ikke, men Integer går
+ArrayList<Integer> passengerList = new ArrayList<Integer>();
+
+Array og ArrayList:
+- AI er tredimensjonelle Arrays som konstant løser problemer
+- cons for array er at man ikke kan endre elementer
+- cons for Arraylist er at den ikke kan lagre primitive datatyper direkte
+
+
+Når burde man bruke Array eller ArrayList?
+- Array (kinosal)
+- ArrayList ( brukerkontoer, netflix)
+
+
+HASH-MAPS:
+- lagrer nøkler/verdi par
+
+
+OPPSUMMERING:
+Collections:
+- rammeverk med flere datastrukturer
+
+ArrayList:
+- nyttig dynamisk liste verktøy
+
+HashMap:
+- lagrer relasjoner mellom nøkler og verdier
+
+
+
+
+
+

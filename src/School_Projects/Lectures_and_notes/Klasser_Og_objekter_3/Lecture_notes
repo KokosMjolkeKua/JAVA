@@ -1,0 +1,85 @@
+AGENDA:
+- Overloading
+    hvae skjer om man har flere metoder med samme navn men forskjellige parameter
+- references
+    hva sker om flere variabler referer til samme objekt
+- scope
+    Hvorfor kan jeg ikke bruke variabler jeg deklarer innenfor en metode/loop andre steder i programmet mitt
+
+
+OVERLOADING:
+eksempel: på forskjellige parameter på samme metode
+robot.dance();
+robot.dance(choreography);
+
+metoder kan ikke ha varianter som kun er forskjellige.
+metoder med flerer varianter kan ha forskjellige returtyper
+
+Når kan vi få bruk for overloading?
+-
+
+
+REFERENCES:
+- hva skjer om flere variabler referere til samme objekt
+
+    verdien i primitive typer
+    verdien i primitive typer (og Strings)
+    kopieres når man setter en variable lik en annen
+
+int year = 2025; //
+int yearAlias = year; //2025 (peker på en verdi)
+
+person trym = new person( 24, "januar"); (kopierer referansen ikke, objektet)
+
+person weds = trym; //har ikke egen verdi! refererer til det undersittende objektet
+
+kan endre array i koden og da vil den ikke
+
+
+SCOPE:
+"Whats created in method, stays in method.." "Unless it is returned"
+
+Hvorfor kan jeg ikke bruke variabler jeg deklarer innenfor en metode
+
+
+GARBAGE COLLECTOR;
+- for å sørge for at du ikke bruker for mye minner, så fjerner
+den det som ikke trengs.
+- eksemopel 1 i time og person brukes ikke noe andre steder, så når
+programmet kjøres så fjerner den de variablene fra programmer som den
+ikke trenegr å lagre infomrasjonen til for hver gang
+
+generelt er ett scope definert som kode innenfor to
+krøllparanteser {}
+- de eksisterer bare innenfor disse curlybrackets uten å få returnert de
+så forsvinner de. fordi de ikke blir brukt.
+
+int number1 = 3;
+{
+    int number2InsideScope = 4;
+}
+
+int number3 = 3;
+int number4 = 5;
+
+Hvordan vil scope fungere med andre kontrollstrukturer?
+- kommer an på strukutren
+- if har du return
+- for varer den gjennom til du har gjort alt inne i forren
+
+
+for ( int loopiteration = 0; loopiteration < 10; loopiteration ++){
+    System.out.println(loopiteration);
+    withinloopiteration += 1; //går også ikke fordi den ikke er definert
+    int withinloopiteration = 4;
+}
+
+loopiteration += 2; //går ikke lenger fordi den ikke er
+                    referert til på utsiden.
+withinloopiteration += 2; //er også samme
+
+
+alt inne i scoopet, for hver linje blir den forrige linja sletta.
+resultaten kan bli hentet hvis den er definert på utsiden.
+men den kan ikke defineres om den bare er inne i scoopen.
+

@@ -1,0 +1,67 @@
+Arv and Association:
+
+ARV: "Darwin"
+- SUPER klasser:
+    de bestemmer ett flertall av elementer sine attributter/de som skal leses
+    og hve ekstra klasse kan ha egne attributter.
+
+    SUPER-Klasser ANimal:
+    - sub klasse (mengdge): Dog
+    - sub klasse (mengdge): Cat
+    - sub klasse (mengdge): Mouse
+
+Betyr basically at det er en underklasse!
+
+
+Java bruker større klassehiearkier til for eksempel exception varianter
+- kan ha forskjellige klasse inne i en klasse:
+Eks:
+    Animal -> cat -> bulgurcat -> han/hun
+    osv.. kan fortsette å dele opp grupper i evighet.
+
+
+- all info fra tidligere klasser kan brukes i underklassen
+
+
+
+OBjekt Klassen har flere metoder som kan overskrives:
+- tostring!
+
+Pros:
+gjenbruk av kode
+polymorphism
+tilatter god organisering av kode gjennom klassehiearkier
+
+Cons:
+Thight coupling
+- de er bundet veldig tett
+- hvis jeg gjør en endring på super klassen, blir alt endret
+Fragility
+- uforutsette problemer i klassen fordi ting blir endret
+
+Mindre fleksibilitet
+- hvis dimensions skal lages etc, må du ha det per klasse
+
+
+COMPOSITION:
+- Frankenstein: satt sammen av forksjellige organer
+    klasser og objekter
+
+    Cat har dimensjoner
+
+    del objekter må være innkapslet og kan ikke være
+    tilgjengelig på utsiden av kompossitt objektet
+
+AGGREGATION:
+
+- tillatter at vi deler referanser til tidligere klasser og objekter
+- ting kan eksistere utenfor kroppen og dør ikke om kroppen dør
+    Ting fra Addams family
+- aggregation er en mindre streng form for assosiasjonen enn composition
+
+- ett kjæledyr kan eksistere uten eier
+
+Generelt sier vi at en klasse assosieres med en annen om den brukes av klassen:
+- Association (noe brukes i en klasse fra en annen, avhengighet mellom to klasser;)
+- Aggregation: (en atributt som er en klasse med en anne type)
+- Composition(kan kun eksistere når composition klassen er i bruk)

@@ -1,0 +1,109 @@
+Repetisjon:
+
+klasser:
+    public class Ticket{
+        String name;
+        String personNr;
+        String destination;
+    }
+
+    Ticket1
+        name;
+        personNr;
+        destination;
+
+    public og private, slik at man ikke kan endre variablene.
+
+    konstruktør:
+    public class Ticket{
+        String name;
+        String personNr;
+        String destination;
+    }
+    public Ticket(String name, String personNr, String destination){
+        this.name = name;
+        this.personNr = personNr;
+        this.destination = destination;
+
+    public void printTicketInfo(){
+        sout("navn: " + this.name);
+        sout("personNr: " + this.personNr;
+        sout("destination: " + this.destination;
+    }
+}
+
+
+Tilgangsnivåaer:
+- public
+- default
+- protected
+- private
+
+klasser, attributter og metoder kan ha forskjellige tilgangsnivåer, kan stoppe noen fra å bruke private variabler
+må da endre den informasjonen som gjør at noe ikke blir riktig: eksempel personnummer, forskjellig fra person til
+person
+
+setter metode:
+
+  public void printTicketInfo(){
+        System.out.println("\nBillet Informasjon");
+        System.out.println("Name: " + this.name);
+        System.out.println("Person Nr: " + this.personNr);
+        System.out.println("Destination: " + this.destination);
+        //husk å skrive System.out.println (fordi ln avgjør om det er neste linje eller ikke)
+
+    }
+
+    public void setPassengerInfo(String name, String personNr){
+        this.name = name;
+        this.personNr = personNr;
+    }
+
+    public String getDestination(){
+        return this.destination;
+    }
+
+
+
+Static:
+- atributter
+- metoder
+
+package KlasserogObjekter2forelesning;
+
+public class klasserogObjekterstatic {
+    private String sang = "Mr. Roboto";
+
+    public void apillSang() {
+        System.out.print("Spiller nå: " + this.sang);
+    }
+}
+
+public class Concert{
+    public static void main(String[]args){
+        DJbot dj = new DJbot();
+    }
+
+Live koding:
+ - sjekk LiveKoding2
+
+Konstant:
+- hvilke statiske konstanter har vi brukt tidligere?
+- store bokstaver er konstante:
+    eks: MAX MIN (konstante verdier)
+        refererer til klassen int eller double, eksempel double.Parsedouble eller Integer.parseInt
+    int.MAX_VALUE
+    int.MIN_VALUE
+    double.MAX_VALUE
+    double.MIN_VALUE
+
+
+Static Metoder:
+- JOptionpane
+metoden bruker noe som ikke trenger ett object:
+- showMessageDialog(null, "");
+- showInputDialog("");
+
+når man putter static foran noe, blir den til ett statisk metode
+- import static javax.swingJOptionPane.*;
+- public static double computeVAT(double netPrice)

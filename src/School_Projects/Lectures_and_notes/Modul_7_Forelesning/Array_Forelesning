@@ -1,0 +1,115 @@
+ARRAYS:
+
+samle like variabler og objekter,
+lage en klasse fly for eksempel:
+- public class Plane{
+    boolean seat1Taken;
+    boolean seat2Taken;
+    boolean seat3Taken;
+    boolean seat4Taken;
+
+    boolean seat18Taken;
+    boolean seat19Taken;
+
+    ...
+    boolean seat156Taken;
+}
+
+hvordan gjøre den kortere? burke Arrays.
+
+Arrays er en samling av indekserte verider og objekter av en gitt datatype eller klasse
+
+seatstaken = index 0 1 2 3
+             Verdi false false false false
+
+i INtellij;
+boolean seatTaken; (enkelt verdi variabel)
+
+boolean[] seatsTaken;
+
+
+faktiske arrayen;
+boolean[] seatTaken = new boolean[4]; (4 er størrelsen på arrayen,
+                                        sier hvor mange verdier som kan være i en)
+
+Når du har laget en array kan du ikke endre størrerlsen på den.
+
+boolean[] seatsTaken ) {false, false, false, false};
+
+boolean seat0Taken = seatsTaken[0]; (kan gjøres på begge måtera)
+
+seatsTaken[1] = true;
+
+
+
+LoopS:
+boolean[] seatsTaken = {false,true,false,false};
+boolean currentSeatTaken;
+
+for(int seatIndex = 0; seatIndex < seatsTaken.length; seatsTaken ++){
+    currentSeatTaken = seatsTaken[seatIndex]
+    System.out.println("Sete Indeks " + seatIndex + " er optatt: " + currentSeatTaken);
+}
+
+vil øke indeksen og loope helt til alle variabler er dekket,
+alle setene i flyet er tatt, fordi den registreerr hvor mange
+seter som er ledige og når alle variabler er true, da er flyet
+fullt.
+
+
+annen version;
+
+boolean[] seatsTaken = {false,true,false,false};
+
+for(boolean seatTaken : seatsTaken){
+    System.out.println("blu blu");
+}
+
+to dimensjonell arrays
+kan ha så mange dimensjoner som vi vil.
+Array: to dimensjoner;
+
+boolean[][] seatsTaken = new boolean[5][3];
+
+[][0][1][2]
+[0][false][true][true]
+[1][true][false][false]
+[2][false][true][true]
+[3][false][false][true]
+[4][false][true][false]
+
+boolean[][] seatsTaken = {{false,true,false}{false,true}}
+
+
+Flere dimensjonelle arrays kan traverseres med nøstede loops
+
+boolean[][] seatsTaken = new boolean[3][2];
+boolean seatTaken;
+
+for(int rowIndex = 0; rowIndex < seatsTaken.length; rowIndex++){
+    for(int colIndex = 0; colIndex < seatsTaken.[rowIndex.lentgh].length; colIndex++){
+        seatsTaken = seatsTaken[rowIndex][colIndex];
+        System.out.println("Rad: " + rowIndex + " Søyle: " colIndex + " Verdi: " seatTaken);
+    }
+}
+
+
+ARRAYS av egne KLasser:
+Seat[] seats = new Seat[15];
+if(seats[3] == null){
+    seats[3] = new Seat();
+}
+
+
+Public class Seat{
+    private String passengerName;
+    private boolean taken;
+
+    public setPassenger(String name){
+        this.passengerName = name;
+        this.taken = true;
+    }
+}
+
+
+

@@ -1,0 +1,13 @@
+Abstraksjon:
+    - fokusere på det vesentlige og skjule det unødvendige
+
+    en prosess for å tenke eller forenkle ideer, objekter, eller fenomenener ved å fokusere
+    på de essentsielle og ignorerer detaljer.
+    - å danne en mal til andre klasser.
+    - andre klasser kan arve informasjonen
+    - "Man kan ikke opprette objekter av en abstrakt klasse"
+    - kan ikke skrive new på en abstract klasse i main, vil ikke funke, fordi det bare er en mal
+    eks:
+        public abstract class (CLASSNAME){
+        public abstract void (METHODNAME){
+

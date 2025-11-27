@@ -1,0 +1,54 @@
+Hvordan skal nettsiden se ut?
+
+først presenter omgivelsene til verdenen,
+
+kanskje ha en showInputDialog som spør om hvilken dag det er?
+og en som spør hvordan været er?
+sol, regn, snø, mye vind?
+les inn parameter kanskje? (buttons?)
+- Når man bruker buttons for parameterene bruk, slik at det er ett spørsmål også
+ja og nei knapp, (kanskje etter/hvis ting funker, kast inn en kanskje knapp.)
+(Fordi når man sier kanskje \, kan man ha valget mellom da to forskjellige
+robotter eventuelt som har de egenskapene man trenger, men hvis været blir
+darlig er det ikke sikkert de kan handtere tasken)
+
+bruke en showMessageDialog til å si hvordan verdenen er.
+presenter med, dette er verdenen våres!
+dagen idag er mandag/tirsdag/onsdag osv
+deretter presenter, som over
+presenter verdenen, kanskje presenter hva du kan gjøre, danse, gå til parken,
+lage mat? også kanskje presenter bot valgene, og da gi brukerern valget mellom
+hvilken bot de vil bruke og hva de vil bruke den til.
+
+så spør hva vil brukeren gjøre idag,
+bruk buttons for å spørre om de vil til parken
+dra på danseklubb etc. finne noen andre ting også å gjøre.
+
+hvis den botten de velger ikke kan utføre oppgaven kommer det opp en melding:
+som er basert på hva de ble igang satt å gjøre.
+f. eks: "EVA kom halveis til parken før batteriet gikk tomt og kunne desverre
+ikke oppfylle oppgaven." "Q-BOT gikk 2 meter ut i høy vind og fløy av gårde,
+ble desverre ikke funnet igjen"
+
+
+deretter skal programmet si hvilke robotter du kan velge.
+
+hvis distance to park er < 0 så kan ikke robotten utføre handlingen
+samme med hvor mye batteri den trenger for å danse.
+
+kanskje ha en option med å lade? (slik at den kan utføre tasken?)
+(kan se på etterpå, men kan være vanskelig)(blir jo settBatteryLevel
+også da at du skriver inn mye parameter, eventuelt du har en knapp,
+som sier lade, slik at den knappen bare gjør at settBatteryLevel da
+blir 100 + "%.".
+
+må kunne skrive at batteryLevel ikke blir høyere enn 100% kanskje?
+og at når de kommer tilbake fra aktiviteten så sier den hvor mye batteryLevel
+de har igjen:
+
+hvis det regner så kan bare "EVA" brukes, hvis det ikke regner kan man bruke
+"Q-BOT" og "Z-BOT"
+
+"EVA" = vannrobot (tåler storm/mye vind)
+"Q-BOT" = har mer batterylevel enn andre
+"Z-BOT" = har solcellepanel

@@ -1,0 +1,45 @@
+IF og ELSE setninger:
+
+kodeord(betingelse){
+setninger som utføres dersom betingelsen er sant;
+}
+
+starter å slutte med {}
+
+int age = 20;
+if(age < 18){
+system.out.printLn("Du er ikke myndig");
+} else if (age >= 20){
+System.out.println("Du er gammel nok");
+} else {
+System.out.println("Du er super myndig");
+
+Den gjør så du må inn i en av de blokkene før du kan gå videre.
+
+Når man har else if, kan man ha fler enn ett valg, kan hoppe over
+resten av teksten eller gå til neste if setning.
+else er da den siste blokken du kommer innom.
+
+Kan være en god ide å skrive ned hvordan du vil at koden skal funke
+for å lettere se hvordan du burde skrive den. hva kommer først, i
+midten og etterpå. tegne det ut kan også funke.
+
+hvor man setter parantesene }{ kommer an på hvilket dataspråk man
+skriver, i java er det samme men som feks python er det vitkig hvor
+man setter den.
+
+if(){
+}
+
+if()
+{
+
+}
+
+
+toLowerCase, for å alltid gjøre alt uansett hva du skriver så bblir
+det lower case.
+toUpperCase, er samme men motsatt
+
+
+while loop er når man alltid ender opp tilbake på samme sted

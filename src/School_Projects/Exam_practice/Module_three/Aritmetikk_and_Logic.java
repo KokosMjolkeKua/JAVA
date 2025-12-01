@@ -21,7 +21,15 @@ public class Aritmetikk_and_Logic {
 
             sum = firstNr + secondNr;
 
-            text = firstNr + " + " + secondNr + " = " + sum;
+            if (sum >= 100){
+                text = firstNr + " + " + secondNr + " = " + sum;
+            }
+            else{
+                text = firstNr + " + " + secondNr + " = " + sum +
+                "\nThis number is also lower than 100..";
+            }
+
+
         }
         catch (Exception e){
             firstNr = 0;

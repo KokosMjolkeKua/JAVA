@@ -21,7 +21,7 @@ public class World {
 
     public boolean getIsRaining() {return this.isRaining;}
 
-    public boolean getIsWindy() {return this.isWindy}
+    public boolean getIsWindy() {return this.isWindy;}
 
     public int getDay() {return this.day;}
 

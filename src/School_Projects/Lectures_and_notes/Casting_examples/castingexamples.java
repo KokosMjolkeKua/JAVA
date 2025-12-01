@@ -65,27 +65,27 @@ public class castingexamples {
             System.out.println("Du kan stemme!");
 
         }
-        if(!canVote){
-            System.out.println("Du kan ikke stemme!");
-        }
-
-        //example 2
-
-        if(canVote == true){
-            System.out.println("Du kan stemme!");
-        }else if(canVote == false){
-            System.out.println("Du kan ikke stemme!");
-        }
-
-        //example 3
-        if(age<18){
-            System.out.println("Du kan ikke handle på polet!");
-        }else if(age<20){
-            System.out.println("du kan handle på polet under 20%");
-        }else{
-            System.out.println("du kan handle hva du vil!");
-        }
-
+//        if(!canVote){
+//            System.out.println("Du kan ikke stemme!");
+//        }
+//
+//        //example 2
+//
+//        if(canVote == true){
+//            System.out.println("Du kan stemme!");
+//        }else if(canVote == false){
+//            System.out.println("Du kan ikke stemme!");
+//        }
+//
+//        //example 3
+//        if(age<18){
+//            System.out.println("Du kan ikke handle på polet!");
+//        }else if(age<20){
+//            System.out.println("du kan handle på polet under 20%");
+//        }else{
+//            System.out.println("du kan handle hva du vil!");
+//        }
+//
 
 
 
@@ -93,4 +93,4 @@ public class castingexamples {
 
 
     }
-}
+

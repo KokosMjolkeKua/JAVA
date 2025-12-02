@@ -1,0 +1,29 @@
+TIPS OG TRIKS:
+
+- måte å lage data ppå og så bruker det etterpå
+- ett slags varelager
+- en liste
+
+
+String array (har plass til 3 strenger)
+ArrayList (tar inn strenger, så mange vi vil)
+Hashmap
+
+på eksamen kan vi få muligehetn til å bruke
+array eller arraylist. de spør noen ganger om du
+bare kan ihvertfall en av de. f eks om du bare har 3
+verdier
+
+Array er grunleggende men, den er begrenset
+ArrayList er mest brukbart med mange mulige
+variabler.
+
+Hashmap brukes litt men ikke så mye som arraylist.
+
+
+hvis man skriver (fori) så gir den for(int i etc
+
+de forskjellige lagringsFormer
+alle er litt forskjellige men er alle
+spesielle med hva du kan gjøre med de
+

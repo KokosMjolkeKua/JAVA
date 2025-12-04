@@ -9,4 +9,8 @@ Eksamens: INFO:
 - 2 oppgaver, en 50% og en 40%
 -
 
+static betyr at alle får samme verdi, den kan ikke ha flere med samme
+navn etc.
+private og public variabler sier om du kan accesse den elelr ikke
+private = den fungerer bare innenfor sitt scope!
 

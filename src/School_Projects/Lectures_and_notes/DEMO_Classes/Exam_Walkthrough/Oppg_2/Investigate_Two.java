@@ -1,6 +1,8 @@
 package School_Projects.Lectures_and_notes.DEMO_Classes.Exam_Walkthrough.Oppg_2;
 
 public class Investigate_Two {
+    static String name;
+    String nameTest;
 
     public void checkNumber(String teller, String nevner){
         int tellerInput;

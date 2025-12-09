@@ -1,6 +1,11 @@
-package School_Projects.Exam_practice.Previous_Exams.Trial_Exam_24;
+package School_Projects.Exam_practice.Previous_Exams.Trial_Exam_24.Oppg_2.Two;
 
-public class DisplayWeather {
+public class Display_Two {
+
+    public String wordsOfWisdom(){
+        return "Love yourself first and everything else falls into line.";
+    }
+
     public String displayWeather(){
         return "Today in Oslo, expect cloudy skies with a chance of light rain or showers, " +
                 "\nespecially morning/afternoon, with temperatures around 4-7°C (39-45°F) and" +

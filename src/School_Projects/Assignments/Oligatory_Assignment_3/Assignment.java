@@ -1,16 +1,15 @@
 package School_Projects.Assignments.Oligatory_Assignment_3;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
+import java.util.Collections;
 
-public class Assignment {
+public class Assignment{
     // a) Metoder
     /**
      * Returns the sum of all the received numbers.
      */
     public int addThreeNumbers(int i, int j, int k) {
-
         return i + j + k;
     }
 
@@ -23,10 +22,10 @@ public class Assignment {
      * Medium (not small or big)
      */
     public String isNumberSmallMediumOrBig(int number){
-        if (number < 100){
+        if(number < 100){
             return "Small";
         }
-        else if(number > 1000){
+        if(number > 1000){
             return "Big";
         }
         else{
@@ -60,9 +59,7 @@ public class Assignment {
             default:
                 System.out.println("Unknown");
                 break;
-
         }
-
     }
 
     // d) Strings
@@ -71,13 +68,12 @@ public class Assignment {
      * Color input is lowercase only.
      */
     public boolean isColorInNorwegianFlag(String color){
-        String c = color.toLowerCase();
-        if(c.equals("white") || c.equals("red") || c.equals("blue")){
-            System.out.println("true");
+        if(color.equalsIgnoreCase("blue") ||
+                color.equalsIgnoreCase("white") ||
+                color.equalsIgnoreCase("red")){
             return true;
         }
-        else {
-            System.out.println("False");
+        else{
             return false;
         }
     }
@@ -86,8 +82,7 @@ public class Assignment {
      * Returns the combined length of the provided Strings.
      */
     public int combinedLength(String s1, String s2){
-        int sum = s1.length() + s2.length();
-        return sum;
+        return s1.length() + s2.length();
     }
 
 
@@ -96,8 +91,12 @@ public class Assignment {
      * hint: https://www.w3schools.com/java/ref_string_length.asp
      */
     public Boolean checkIfStringIsWithinCorrectLength(String string, int maxChar, int minChar){
-        int length = string.length();
-        return length <= maxChar && length >= minChar;
+        if(string.length() <= maxChar && string.length() >= minChar){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
 
@@ -107,10 +106,9 @@ public class Assignment {
      * One String on each line.
      */
     public void printAllStrings(String[] strings){
-        for(String all: strings){
-            System.out.println(all);
+        for(String s: strings){
+            System.out.println(s);
         }
-
     }
 
 
@@ -119,8 +117,8 @@ public class Assignment {
      */
     public int arraySum(int[] numbers){
         int sum = 0;
-        for (int i: numbers){
-            sum += i;
+        for(int i: numbers){
+            sum = i + sum;
         }
         return sum;
     }
@@ -131,12 +129,11 @@ public class Assignment {
      * But only if the String is not exactly "Corona".
      */
     public void printAllStringsNotCorona(String[] strings){
-        for (String s: strings){
-            if (!s.equals("Corona")){
-                System.out.println(s);
+        for (int i = 0; i < strings.length; i++) {
+            if(!strings[i].contains("Corona")){
+                System.out.println(strings[i]);
             }
         }
-
     }
 
     // f) Collections
@@ -144,13 +141,13 @@ public class Assignment {
      * Finds all integers lower than a given number and stores these in an ArrayList
      */
     public ArrayList<Integer> findAllIntsBelowNumberInArray(int[] integerArray, int number) {
-        ArrayList<Integer> all = new ArrayList<>();
-        for (int i: integerArray){
-            if(number > i){
-                all.add(i);
+        ArrayList<Integer> lowIntegers = new ArrayList<>();
+        for(int i: integerArray){
+            if(i < number){
+                lowIntegers.add(i);
             }
         }
-        return all;
+        return lowIntegers;
     }
 
     /**
@@ -158,11 +155,13 @@ public class Assignment {
      * in a hashmap and returns this HashMap
      */
     public HashMap<String, String> makeHashMapFromTwoArrays(String[] keyArray, String[] valueArray) {
-        HashMap<String, String> result = new HashMap<>();
-        for(int s = 0; s < keyArray.length; s++){
-            result.put(keyArray[s], valueArray[s]);
+        HashMap<String, String> hashMap = new HashMap<>();
+
+        for (int i = 0; i < keyArray.length; i++) {
+            hashMap.put(keyArray[i], valueArray[i]);
         }
-        return result;
+
+        return hashMap;
     }
 
     /**
@@ -172,25 +171,16 @@ public class Assignment {
      */
 
     public HashMap<String, Integer> findFrequencyOfElementsInArrayListOfStrings(ArrayList<String> stringList) {
-        //HashMap<String, Integer> newHashMap = new HashMap<>();
-        //for (String element : stringList) {
-        //    newHashMap.put(element, newHashMap.getOrDefault(element, 0) + 1);
-        //}
-
-        //return newHashMap;
-
-        HashMap<String, Integer> map = new HashMap<>();
-        ArrayList<Integer> occurance = new ArrayList<>();
-
-        for(int i = 0; i < stringList.toArray().length; i++){
-            int newOccurance = Collections.frequency(stringList, stringList.toArray()[i]);
-            occurance.add(newOccurance);
+        HashMap<String, Integer> frequency = new HashMap<>();
+        for(String s: stringList){
+            if(frequency.containsKey(s)){
+                frequency.put(s, frequency.get(s) + 1);
+            }
+            else{
+                frequency.put(s, 1);
+            }
         }
-        for(int i = 0; i < stringList.toArray().length; i++){
-            int value = Integer.parseInt(occurance.toArray()[i].toString());
-            map.put(stringList.toArray()[i].toString(), value);
-        }
-        return map;
+        return frequency;
     }
 
 
@@ -204,7 +194,7 @@ public class Assignment {
      * Tips: google er din venn
      */
     public int firstOccurrence(String string, char c){
-        return 0;
+        return string.indexOf(c);
     }
 
     /**
@@ -212,8 +202,9 @@ public class Assignment {
      * hint: https://www.w3schools.com/java/ref_string_trim.asp
      */
     public String ensureOnlySingleSpaceAtEndOfString(String string){
-        return string;
+        return string.trim();
     }
+
 
     /**
      * Return True if the string is valid under the following conditions:
@@ -224,7 +215,13 @@ public class Assignment {
      * Hint: Maybe its possible to reuse previous methods for this task?
      */
     public Boolean validateString(String string){
-        return false;
+        if(!string.contains("  ") && !string.startsWith(" ")
+                && string.length() >= 6 && string.length() <= 60){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
 
@@ -233,7 +230,9 @@ public class Assignment {
      * One String on each line.
      */
     public void printUpperCaseStrings(String[] strings){
-
+        for(String s: strings){
+            System.out.println(s.toUpperCase());
+        }
     }
 
     /**
@@ -242,16 +241,33 @@ public class Assignment {
      * Do not print in separate lines.
      */
     public void printFirstSentence(char[] chars) {
+        boolean yes = true;
+        while(yes){
+            for(char c: chars){
+                if((c == '.')){
+                    System.out.println(c);
+                    yes = false;
+                }
+                System.out.println(c + " ");
+            }
+        }
 
     }
-    
+
     /**
      * Prints all Strings in received array to standard output.
      * One String on each line.
-     * But only if the String is not Corona (case-insensitive).
+     * But only if the String is not Corona (case insensitive).
      */
     public void printAllStringsNotCoronaCaseInsensitive(String[] strings){
-
+        for(String s: strings){
+            if(!s.contains("Corona")){
+                System.out.println(s);
+            }
+            if(s.contains("Corona")){
+                System.out.println("case insensitive");
+            }
+        }
     }
 
     /**
@@ -259,6 +275,10 @@ public class Assignment {
      * hint: this is called varargs
      */
     public int addNumbers(int... numbers){
-        return 0;
+        int sum = 0;
+        for (var v: numbers){
+            sum = v + sum;
+        }
+        return sum;
     }
 }

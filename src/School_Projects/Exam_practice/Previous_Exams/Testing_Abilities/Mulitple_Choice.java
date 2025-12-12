@@ -1,4 +1,4 @@
-package School_Projects.Exam_practice.Previous_Exams;
+package School_Projects.Exam_practice.Previous_Exams.Testing_Abilities;
 
 public class Mulitple_Choice {
     public static void main(String[]args){

@@ -1,4 +1,4 @@
-package School_Projects.Exam_practice.Previous_Exams;
+package School_Projects.Exam_practice.Previous_Exams.Testing_Abilities;
 
 public class Int_Array {
 

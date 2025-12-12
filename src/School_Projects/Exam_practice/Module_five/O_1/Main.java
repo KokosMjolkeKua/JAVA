@@ -20,6 +20,7 @@ public class Main {
         if(totalAreal < 51){
 //            Apartment A6 = new Apartment(new String[]{livingR.toString(), bathR.toString(), entre.toString(), kitchen.toString(), bedR.toString()});
             Apartment A2 = new Apartment(rooms);
+            System.out.println("Arealet for hele leiligheten er " + totalAreal);
         }
 
 

@@ -1,4 +1,4 @@
-package School_Projects.Exam_practice.Repetittion.Rep_2;
+package School_Projects.Exam_practice.Repetittion.Rep_2_Oppg4;
 
 import static javax.swing.JOptionPane.*;
 

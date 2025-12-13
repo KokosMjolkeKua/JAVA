@@ -1,19 +1,18 @@
-package School_Projects.Exam_practice.Repetittion.Rep_2;
+package School_Projects.Exam_practice.Repetittion.Rep_2_Oppg4;
 
-public class Chef extends Employee{
+public class Employee {
     private int age;
     private int salary;
     private String name;
 
-    public Chef(int age, int salary, String name){
-        super(age, salary, name);
+    public Employee(int age, int salary, String name){
         this.age = age;
         this.salary = salary;
         this.name = name;
     }
 
-    public String makeDish(String dish){
-        return "Kokkens spesial er ferdig laget.";
+    public int getSalary(){
+        return salary;
     }
 
     public String toString(){
@@ -22,5 +21,4 @@ public class Chef extends Employee{
                 "\nAge : " + age +
                 "\nSalary : " + salary;
     }
-
 }

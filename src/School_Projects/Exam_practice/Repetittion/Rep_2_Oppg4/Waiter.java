@@ -1,4 +1,4 @@
-package School_Projects.Exam_practice.Repetittion.Rep_2;
+package School_Projects.Exam_practice.Repetittion.Rep_2_Oppg4;
 
 public class Waiter extends Employee{
     private int age;
